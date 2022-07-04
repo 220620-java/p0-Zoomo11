@@ -7,7 +7,7 @@ public class Student {
 	private String lastName;
 	private String username;
 	private String email;
-	
+	private UserType type;
 	
 	public Student() {
 		this.id = 0;
@@ -15,7 +15,7 @@ public class Student {
 		this.lastName = "";
 		this.username = "";
 		this.email = "";
-		//UserType type = UserType.STUDENT;
+		type = UserType.STUDENT;
 	}
 	
 	public Student (String firstName, String lastName, String username, String email) {
@@ -24,7 +24,7 @@ public class Student {
 		this.lastName = lastName;
 		this.username = username;
 		this.email = email;
-		//UserType type = UserType.STUDENT;
+		type = UserType.STUDENT;
 	
 	}
 }

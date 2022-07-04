@@ -5,6 +5,6 @@ public class Course {
 	private String name;
 	private String description;
 	private int capacity;
-	private String status;
+	private Status status;
 	
 }

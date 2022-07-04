@@ -7,6 +7,7 @@ public class Faculty {
 	private String lastName;
 	private String username;
 	private String email;
+	private UserType type;
 	
 	public Faculty () {
 		this.id = 0;
@@ -14,7 +15,7 @@ public class Faculty {
 		this.lastName = "";
 		this.username = "";
 		this.email = "";
-		//UserType type = UserType.FACULTY; 
+		type = UserType.FACULTY; 
 	}
 	
 	public Faculty (String firstName, String lastName, String username, String email) {
