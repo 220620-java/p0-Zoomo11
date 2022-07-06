@@ -17,25 +17,25 @@ public class CourseKiosk {
 	public static void main (String[] args) {
 		
 		
-		 ConnectionUtil connUtil = ConnectionUtil.getConnectionUtil();
-		  
-		 try(Connection conn = connUtil.getConnection()) { 
-			 if ( conn.isValid(1) ) 
-			 {
-				 System.out.println("Connection is working"); 
-			} else {
-				System.out.println("connection not working"); 
-			} 
-		} catch (SQLException e) { 
-			
-		}
+//		 ConnectionUtil connUtil = ConnectionUtil.getConnectionUtil();
+//		  
+//		 try(Connection conn = connUtil.getConnection()) { 
+//			 if ( conn.isValid(1) ) 
+//			 {
+//				 System.out.println("Connection is working"); 
+//			} else {
+//				System.out.println("connection not working"); 
+//			} 
+//		} 
+//		 catch (SQLException e)	{
+//		}
 		 
 		
 		//System.out.println("Welcome to CourseKiosk");
 		//System.out.println("1. Log in\n" + "2. Register\n" + "3. Exit");
 		
 		//String input = scanner.nextLine();
-		//menu();
+		menu();
 	}
 	public static void menu() {
 		System.out.println("Welcome to CourseKiosk");
