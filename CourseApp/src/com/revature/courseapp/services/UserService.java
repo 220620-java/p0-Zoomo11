@@ -7,7 +7,7 @@ import com.revature.courseapp.models.User;
 public interface UserService {
 
 	public User login(String username, String password);
-	public Student studentReg () throws UsernameAlreadyExistsException;
+	public User studentReg (User user) throws UsernameAlreadyExistsException;
 	public void studentOpenClass();
 	public void studentRegClass();
 	public void displayEnrolledClass();

@@ -50,7 +50,7 @@ public class CoursePostgres implements CourseDAO {
 	public Course findById(int id) {
 		try (Connection conn = connUtil.getConnection()) {
 			
-			String sql = "select * from courses where course.id=? ";
+			String sql = "select * from course where course.id=? ";
 			
 			PreparedStatement state = conn.prepareStatement(sql);
 			state.setInt(1, id);
